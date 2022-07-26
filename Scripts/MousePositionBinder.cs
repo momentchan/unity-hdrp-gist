@@ -14,8 +14,9 @@ namespace mj.gist {
         }
 
         public override void UpdateBinding(VisualEffect component) {
-            var worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            worldPosition.z = depth;
+            var mouseScreen = Input.mousePosition;
+            mouseScreen.z = depth;
+            var worldPosition = Camera.main.ScreenToWorldPoint(mouseScreen);
             component.SetVector3(mouseWorldProperty, worldPosition);
         }
     }
