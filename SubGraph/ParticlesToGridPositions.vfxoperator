@@ -20,6 +20,8 @@ VisualEffectResource:
     m_PreWarmDeltaTime: 0.05
     m_PreWarmStepCount: 0
     m_InitialEventName: OnPlay
+    m_InstancingMode: -1
+    m_InstancingCapacity: 64
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,7 +84,7 @@ MonoBehaviour:
     enumValues: []
     descendantCount: 0
   m_ImportDependencies: []
-  m_GraphVersion: 8
+  m_GraphVersion: 12
   m_ResourceVersion: 1
   m_SubgraphDependencies: []
   m_CategoryPath: 
@@ -461,7 +463,8 @@ MonoBehaviour:
   - {fileID: 114350483966674996}
   m_OutputSlots:
   - {fileID: 114350483966674997}
-  m_Subgraph: {fileID: 5371698745253816930, guid: 5947ec72c5899624da77e0209dc5fc8e, type: 3}
+  m_Subgraph: {fileID: 5371698745253816930, guid: 5947ec72c5899624da77e0209dc5fc8e,
+    type: 3}
 --- !u!114 &114350483966674993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -757,7 +760,8 @@ MonoBehaviour:
   m_InputSlots: []
   m_OutputSlots:
   - {fileID: 114350483966675002}
-  m_Subgraph: {fileID: 5371698745253816930, guid: a47a51d78a84232489bfe98f221d524a, type: 3}
+  m_Subgraph: {fileID: 5371698745253816930, guid: a47a51d78a84232489bfe98f221d524a,
+    type: 3}
 --- !u!114 &114350483966675002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -884,7 +888,8 @@ MonoBehaviour:
   - {fileID: 114350483966675009}
   m_OutputSlots:
   - {fileID: 114350483966675012}
-  m_Subgraph: {fileID: 5371698745253816930, guid: cbe723366c61ad445a0dc5463f76bd68, type: 3}
+  m_Subgraph: {fileID: 5371698745253816930, guid: cbe723366c61ad445a0dc5463f76bd68,
+    type: 3}
 --- !u!114 &114350483966675006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1932,7 +1937,8 @@ MonoBehaviour:
   - {fileID: 114350483966675040}
   m_OutputSlots:
   - {fileID: 114350483966675041}
-  m_Subgraph: {fileID: 5371698745253816930, guid: 5947ec72c5899624da77e0209dc5fc8e, type: 3}
+  m_Subgraph: {fileID: 5371698745253816930, guid: 5947ec72c5899624da77e0209dc5fc8e,
+    type: 3}
 --- !u!114 &114350483966675037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2231,7 +2237,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 114350483966675048}
   - {fileID: 114350483966675051}
-  m_Subgraph: {fileID: 5371698745253816930, guid: ac19503612e203141a1e10bfc75220a1, type: 3}
+  m_Subgraph: {fileID: 5371698745253816930, guid: ac19503612e203141a1e10bfc75220a1,
+    type: 3}
 --- !u!114 &114350483966675048
 MonoBehaviour:
   m_ObjectHideFlags: 0
