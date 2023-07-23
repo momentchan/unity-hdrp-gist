@@ -10,6 +10,7 @@ namespace Lasp
     public static class AudioInput
     {
         #region Public methods
+        const float kSilence = -40; // -40 dBFS = silence
 
         // Returns the peak level during the last frame.
         public static float GetPeakLevel(FilterType filter)
@@ -25,6 +26,12 @@ namespace Lasp
             return ConvertToDecibel(GetPeakLevel(filter), 1);
         }
 
+        public static float GetPeakLevelNormalized(FilterType filter)
+        {
+            var peak = GetPeakLevelDecibel(filter);
+            return Mathf.Clamp01(1 - peak / kSilence);
+        }
+
         // Calculates the RMS level of the last frame.
         public static float CalculateRMS(FilterType filter)
         {
@@ -37,6 +44,12 @@ namespace Lasp
         {
             // Full scale sin wave = 0 dBFS : refLevel = 1/sqrt(2)
             return ConvertToDecibel(CalculateRMS(filter), 0.7071f);
+        }
+
+        public static float CalculateRMSNormalized(FilterType filter)
+        {
+            var rms = CalculateRMSDecibel(filter);
+            return Mathf.Clamp01(1 - rms / kSilence);
         }
 
         // Retrieve and copy the waveform.
